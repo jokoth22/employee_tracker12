@@ -6,7 +6,7 @@ USE employee_db;
 DROP TABLE IF EXISTS department,roles,employee;
 
 CREATE TABLE department (
-    id INT NOT NULL,
+    id INT NOT NULL PRIMARY KEY,
     dept_name VARCHAR(30) NOT NULL,
     PRIMARY KEY (id)
 );

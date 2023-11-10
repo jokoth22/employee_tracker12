@@ -106,3 +106,24 @@ db.query('SELECT * FROM employee', function (err, results) {
 // });
 
 //read all movies
+
+async function promptForEmployeeInfo(){
+  getAllRoles();
+  getAllEmployees();
+
+  //TODO: refer to code for project: create README
+  var managerChoices.push({name: 'None', value: null })
+  return inquirer.prompt(
+    [
+      {
+        //object format
+        type:'input',
+        name: 'first_name',
+        message: 'enter the employee\'s first name'
+      }
+      {
+        //add more
+      }
+    ]
+  )
+}
