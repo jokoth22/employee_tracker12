@@ -120,10 +120,15 @@ async function promptForEmployeeInfo(){
         type:'input',
         name: 'first_name',
         message: 'enter the employee\'s first name'
-      }
+      },
       {
         //add more
-      }
+        type:'confirm'
+        name: 'quit or exit'
+        message: "Are you sure you want to quit?"
+        when: 'true'
+      },
     ]
   )
 }
+// refer to documentation for inquirer 
