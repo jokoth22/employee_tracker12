@@ -1,3 +1,68 @@
+Creating a README file is essential for documenting your project, making it easier for others to understand its purpose, setup, and usage. Below is a template for a README file for your Employee Tracker application. You can modify it as needed to fit the specifics of your project.
+
+---
+
+# Employee Tracker
+
+## Description
+Employee Tracker is a command-line application for managing a company's employee database. It allows users to view, add, and update information about employees, roles, and departments using Node.js, Inquirer, and MySQL.
+
+## Installation
+
+To set up the Employee Tracker application, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Install necessary dependencies by running:
+   ```
+   npm install
+   ```
+4. Ensure that MySQL is installed on your machine. If not, install it from [MySQL's official website](https://www.mysql.com/).
+
+## Usage
+
+To use the Employee Tracker, follow these instructions:
+
+1. Start the MySQL command-line tool and login:
+   ```
+   mysql -u root -p
+   ```
+2. Create and set up the database using the provided `schema.sql` file:
+   ```
+   SOURCE path/to/schema.sql;
+   ```
+   Optionally, use `seeds.sql` to populate the database with sample data.
+3. Exit the MySQL command line tool:
+   ```
+   exit
+   ```
+4. Start the application by running:
+   ```
+   node server.js
+   ```
+5. Use the command-line prompts to manage the employee database.
+
+## Features
+
+- View all departments, roles, and employees
+- Add new departments, roles, and employees
+- Update employee roles
+
+## Contributing
+
+If you wish to contribute to this project, please follow these guidelines:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes and push to your branch.
+4. Create a Pull Request for review and potential merge to the main project.
+
+## License
+
+This project is licensed under the MIT - see the [MIT License](https://opensource.org/licenses/MIT) for details
+
+-
+
 # 12 SQL: Employee Tracker
 
 ## Your Task
@@ -19,23 +84,23 @@ SO THAT I can organize and plan my business
 ## Acceptance Criteria
 
 ```md
-GIVEN a command-line application that accepts user input
-WHEN I start the application
-THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
-WHEN I choose to view all departments
-THEN I am presented with a formatted table showing department names and department ids
-WHEN I choose to view all roles
-THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
-WHEN I choose to view all employees
-THEN I am presented with a formatted table showing employee data, including employee ids, first names, last names, job titles, departments, salaries, and managers that the employees report to
-WHEN I choose to add a department
+-GIVEN a command-line application that accepts user input
+-WHEN I start the application
+-THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
+-WHEN I choose to view all departments
+-THEN I am presented with a formatted table showing department names and department ids
+-WHEN I choose to view all roles
+-THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
+-WHEN I choose to view all employees
+-THEN I am presented with a formatted table showing employee data, including employee ids, first names, last names, job titles, departments, salaries, and managers that the employees report to
+-WHEN I choose to add a department
 THEN I am prompted to enter the name of the department and that department is added to the database
-WHEN I choose to add a role
-THEN I am prompted to enter the name, salary, and department for the role and that role is added to the database
-WHEN I choose to add an employee
-THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
-WHEN I choose to update an employee role
-THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
+-WHEN I choose to add a role
+-THEN I am prompted to enter the name, salary, and department for the role and that role is added to the database
+-WHEN I choose to add an employee
+-THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
+-WHEN I choose to update an employee role
+-THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
 ```
 
 ## Mock-Up
